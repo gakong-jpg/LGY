@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - IAB Studio Style</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <button id="menu-toggle">MENU</button>
+        </div>
+        <div class="header-right">
+            <div class="dot white"></div>
+            <div class="dot yellow"></div>
+            <div class="dot red"></div>
+        </div>
+    </header>
+
+    <!-- Main Hero Section -->
+    <section id="hero" class="page-section visible">
+        <div class="hero-bg-text">
+            <span>L G Y</span>
+            <span>STUDIO</span>
+        </div>
+        
+        <div class="image-grid">
+            <div class="grid-item item-1">
+                <img src="images/3.jpg" alt="Robot">
+            </div>
+            <div class="grid-item item-2">
+                <img src="images/1.jpeg" alt="Academy">
+            </div>
+            <div class="grid-item item-3">
+                <img src="images/4.jpg" alt="Circuit">
+            </div>
+            <div class="grid-item item-4">
+                <img src="images/2.jpeg" alt="Festival">
+            </div>
+            <div class="grid-item item-5">
+                <img src="images/5.jpg" alt="Engineering">
+            </div>
+        </div>
+    </section>
+
+    <!-- Board / Content Sections -->
+    <section id="content-page" class="page-section hidden">
+        <div class="content-header">
+            <h1 id="page-title">SCHOOL INTRODUCTION</h1>
+            <div class="board-controls">
+                <button class="btn-primary">WRITE</button>
+            </div>
+        </div>
+        
+        <div class="board-container" id="board-content">
+            <!-- Dynamically loaded content -->
+             <div class="board-card">
+                <div class="card-image"><img src="https://images.unsplash.com/photo-1541339907198-e08756ebafe3?q=80&w=2070&auto=format&fit=crop" alt="Example"></div>
+                <div class="card-info">
+                    <h3>학교의 전통과 비전</h3>
+                    <p>우리 학교는 미래 지향적인 교육을 통해 창의적인 인재를 양성합니다...</p>
+                    <span class="date">2024.05.07</span>
+                </div>
+             </div>
+             <div class="board-card">
+                <div class="card-image"><img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop" alt="Example"></div>
+                <div class="card-info">
+                    <h3>학과 소개: 미디어 디자인</h3>
+                    <p>디지털 변혁의 시대에 맞춘 최첨단 미디어 교육 과정을 제공합니다.</p>
+                    <span class="date">2024.05.06</span>
+                </div>
+             </div>
+        </div>
+        <button class="back-home">BACK TO HOME</button>
+    </section>
+
+    <nav id="full-menu">
+        <div class="menu-box">
+            <ul class="menu-list">
+                <li><a href="#" data-page="PORTFOLIO">MY PORTFOLIO</a></li>
+                <li><a href="#" data-page="SCHOOL">SCHOOL INTRO</a></li>
+                <li><a href="#" data-page="COMPANIES">COMPANIES</a></li>
+                <li><a href="#" data-page="LIFE">CAMPUS LIFE</a></li>
+                <li><a href="#" id="menu-contact-trigger">CONTACT</a></li>
+            </ul>
+        </div>
+        <button id="menu-close">CLOSE</button>
+    </nav>
+
+    <div id="contact-popup" class="hidden">
+        <div class="popup-header">
+            <button id="popup-close">X</button>
+        </div>
+        <div class="popup-content">
+            <h2>CONTACT</h2>
+            <p><strong>Email:</strong> gakong@dongyang.av.kr</p>
+            <p><strong>Instagram:</strong> @ga_young_l</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-text">© 2026 PORTFOLIO. STYLED BY LGY.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
